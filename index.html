@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tiled WMS</title>
+    <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+    <script src="https://unpkg.com/elm-pep@1.0.6/dist/elm-pep.js"></script>
+    <!-- The lines below are only needed for old environments like Internet Explorer and Android 4.x -->
+    <script
+        src="https://cdn.polyfill.io/v3/polyfill.min.js?features=fetch,requestAnimationFrame,Element.prototype.classList,TextDecoder"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/3.18.3/minified.js"></script>
+    <script src="https://unpkg.com/elm-pep@1.0.6/dist/elm-pep.js"></script>
+    <!-- The lines below are only needed for old environments like Internet Explorer and Android 4.x -->
+    <script
+        src="https://cdn.polyfill.io/v3/polyfill.min.js?features=fetch,requestAnimationFrame,Element.prototype.classList,TextDecoder"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/3.18.3/minified.js"></script>
+    <script src="https://unpkg.com/ol-layerswitcher@3.8.3"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ol-layerswitcher@3.8.3/dist/ol-layerswitcher.css" />
+    <link rel="stylesheet" href="node_modules/ol/ol.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__title">
+            Геопортал Пермского края, <span class="header__span">бета-версия</span>
+        </div>
+
+        <div class="header__auth">
+            Авторизация
+        </div>
+    </header>
+
+    <div class="container">
+
+        <div id="map" class="map"></div>
+        <script type="module" src="main.js"></script>
+
+    </div>
+
+    <footer class="footer">
+        <a href="https://permkrai.ru/" class="footer__link">
+            Официальный сайт Пермского края
+        </a>
+
+        <div class="footer__info">
+            Геопортал Пермского края <br>
+            Разработчик: Казьмин И.С. РСБО-01-20 <br>
+            ГИС ИРИ РТУ МИРЭА, 2023 год <br>
+        </div>
+    </footer>
+
+</body>
+
+</html>
